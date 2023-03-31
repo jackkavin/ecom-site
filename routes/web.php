@@ -1,6 +1,12 @@
 <?php
 
+use App\Jobs\SendPushNotification;
 use Illuminate\Support\Facades\Route;
+// use Illuminate\Http\Request;
+// use App\Models\taxi\Settings;
+// use App\Models\taxi\Requests\Request as RequestModel;
+
+use App\Http\Controllers\Taxi\Web\Request\ShareTripController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/login', function () {
+//     return view('welcome');
+// });
+
+
+require __DIR__.'/auth.php';
+require __DIR__.'/web/product.php';
